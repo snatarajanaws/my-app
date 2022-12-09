@@ -28,6 +28,7 @@ node{
    sh "docker tag snatarajanaws/myweb:0.0.2 43.204.22.148:8083/damo:1.0.0"
    sh 'docker push 43.204.22.148:8083/damo:1.0.0'
    }
+	
    stage('Remove Previous Container'){
 	try{
 		sh 'docker rm -f tomcattest'
